@@ -28,7 +28,7 @@ body{
 .brand .word1{color:var(--brand-green);font-weight:700}
 .brand .word2{color:var(--accent);font-weight:700}
 .brand .word3{color:var(--brand-teal);font-weight:700}
-.logo-img{height:56px;display:inline-block;margin-bottom:6px}
+.logo-img{height:140px;display:inline-block;margin-bottom:6px;max-width:45%;width:auto}
 .hero{width:100%;max-width:1400px;margin:28px;padding:64px 48px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));box-shadow:0 10px 48px rgba(2,6,23,0.6);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;filter:brightness(0.65) saturate(0.95);transform:scale(1.02);z-index:0}
 .hero-inner{position:relative;z-index:2;color:var(--brand-warm)}
@@ -38,7 +38,7 @@ body{
 /* Make the hero readable on small screens */
 @media (max-width:900px){
 	.hero{padding:36px 20px}
-	.logo-img{height:44px}
+	.logo-img{height:72px;max-width:70%}
 }
 .logo{filter:drop-shadow(0 6px 18px rgba(0,0,0,0.45));}
 
