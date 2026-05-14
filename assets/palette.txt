@@ -1,0 +1,11 @@
+Extracted color palette (suggested variables):
+
+--brand-green: #1B8A5A  (deep green)
+--brand-teal:  #24A0B4  (teal)
+--accent:      #7C5CFF  (purple accent)
+--sky:         #BFE9FF  (soft sky blue)
+--warm:        #F4E7D2  (warm beige)
+--bg-dark:     #071026  (deep background)
+--muted:       #98A0B3  (muted gray)
+
+Use these for buttons, accents and overlays to match your uploaded image.

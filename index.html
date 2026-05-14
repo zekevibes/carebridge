@@ -11,7 +11,8 @@
   </head>
   <body>
     <main class="hero">
-      <div style="text-align: center; font-family: sans-serif; padding: 50px; max-width:900px;margin:0 auto;">
+      <div class="hero-inner" style="text-align: center; font-family: sans-serif; padding: 50px; max-width:1000px;margin:0 auto;">
+        <img src="assets/logo.png" alt="CareBridgeAfrica" class="logo-img" onerror="this.style.display='none'">
         <div class="brand-wrap" style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
           <svg class="logo" width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect x="1" y="1" width="22" height="22" rx="5" fill="rgba(255,255,255,0.06)"/>
@@ -35,21 +36,6 @@
 
         <p><strong>Join the Waitlist:</strong> Send us an email to get early access!</p>
         <p style="margin-top:10px"><a class="waitlist-btn" href="mailto:info@carebridgeafrica.com?subject=Join%20the%20CareBridge%20Waitlist">Join our waitlist to be the first to know when we launch</a></p>
-
-        <hr style="margin:28px 0;">
-
-        <h3>Quick Contact Form</h3>
-        <form id="contactForm" style="max-width:600px;margin:0 auto;text-align:left;" onsubmit="return sendMail();">
-          <label for="name">Name</label><br>
-          <input id="name" name="name" type="text" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
-          <label for="email">Email</label><br>
-          <input id="email" name="email" type="email" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
-          <label for="message">Message</label><br>
-          <textarea id="message" name="message" rows="4" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit"></textarea>
-          <button type="submit" class="cta" style="margin-top:8px;">Send</button>
-        </form>
-
-        <p style="margin-top:18px">Follow us: <a href="https://twitter.com/zekevibes" target="_blank" rel="noopener">Twitter</a> • <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
 
         <footer class="foot" style="margin-top:18px">&copy; <span id="year"></span> CareBridge Africa</footer>
       </div>
