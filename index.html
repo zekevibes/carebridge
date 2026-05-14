@@ -1,23 +1,73 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Coming Soon</title>
-    <meta name="description" content="Coming soon — we're launching our site." />
+    <title>CareBridge Africa — Coming Soon</title>
+    <meta name="description" content="Bridging the gap in healthcare — launching soon." />
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#0b1020" />
   </head>
   <body>
     <main class="hero">
-      <h1 class="title">Coming Soon</h1>
-      <p class="subtitle">We're working on something great. Stay tuned.</p>
-      <a class="cta" href="mailto:hello@carebridgeafrica.com">Notify me</a>
-      <footer class="foot">&copy; <span id="year"></span></footer>
+      <div style="text-align: center; font-family: sans-serif; padding: 50px; max-width:900px;margin:0 auto;">
+        <div class="brand-wrap" style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+          <svg class="logo" width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1" y="1" width="22" height="22" rx="5" fill="rgba(255,255,255,0.06)"/>
+            <path d="M12 6v12M6 12h12" stroke="#7c5cff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h1 class="brand"><span class="word1">Care</span> <span class="word2">Bridge</span> <span class="word3">Africa</span></h1>
+        </div>
+
+        <h2 class="title">Bridging the Gap in Healthcare. Launching Soon.</h2>
+        <p class="subtitle">A dedicated platform designed to seamlessly connect patients with reliable healthcare services and resources.</p>
+        
+        <br>
+        
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@carebridgeafrica.com">info@carebridgeafrica.com</a></p>
+        
+        <!-- WhatsApp Link -->
+        <p>WhatsApp: <a href="https://wa.me/254713464082" target="_blank" rel="noopener">+254 713 464 082</a></p>
+
+        <br>
+
+        <p><strong>Join the Waitlist:</strong> Send us an email to get early access!</p>
+        <p style="margin-top:10px"><a class="waitlist-btn" href="mailto:info@carebridgeafrica.com?subject=Join%20the%20CareBridge%20Waitlist">Join our waitlist to be the first to know when we launch</a></p>
+
+        <hr style="margin:28px 0;">
+
+        <h3>Quick Contact Form</h3>
+        <form id="contactForm" style="max-width:600px;margin:0 auto;text-align:left;" onsubmit="return sendMail();">
+          <label for="name">Name</label><br>
+          <input id="name" name="name" type="text" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit"></textarea>
+          <button type="submit" class="cta" style="margin-top:8px;">Send</button>
+        </form>
+
+        <p style="margin-top:18px">Follow us: <a href="https://twitter.com/zekevibes" target="_blank" rel="noopener">Twitter</a> • <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+
+        <footer class="foot" style="margin-top:18px">&copy; <span id="year"></span> CareBridge Africa</footer>
+      </div>
     </main>
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      function sendMail(){
+        var name = encodeURIComponent(document.getElementById('name').value);
+        var email = encodeURIComponent(document.getElementById('email').value);
+        var message = encodeURIComponent(document.getElementById('message').value);
+        var subject = encodeURIComponent('CareBridge Contact from ' + name + ' <' + email + '>');
+        var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+        var mailto = 'mailto:info@carebridgeafrica.com?subject=' + subject + '&body=' + body;
+        window.location.href = mailto;
+        return false;
+      }
     </script>
   </body>
 </html>
