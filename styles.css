@@ -38,10 +38,15 @@ body{
 	object-fit:contain;
 }
 .hero{width:100%;max-width:1400px;margin:28px;padding:64px 48px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));box-shadow:0 10px 48px rgba(2,6,23,0.6);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background-image:url('assets/hero.jpg');background-size:cover;background-position:center;filter:brightness(0.65) saturate(0.95);transform:scale(1.02);z-index:0}
-.hero-inner{position:relative;z-index:2;color:var(--brand-warm)}
-.hero .title{color:#053233}
-.hero .subtitle{color:rgba(3,26,22,0.8)}
+.hero::before{
+	content:'';
+	position:absolute;inset:0;
+	/* use transparent hero if available and apply dark overlay for legibility */
+	background-image: linear-gradient(rgba(0,0,0,0.46), rgba(0,0,0,0.22)), url('assets/hero.png');
+	background-size:cover;background-position:center;filter:saturate(0.98);transform:scale(1.02);z-index:0}
+.hero-inner{position:relative;z-index:2;color:#ffffff}
+.hero .title{color:#ffffff}
+.hero .subtitle{color:rgba(255,255,255,0.92)}
 
 /* Make the hero readable on small screens */
 @media (max-width:900px){
