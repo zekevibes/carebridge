@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Coming Soon</title>
+    <meta name="description" content="Coming soon — we're launching our site." />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#0b1020" />
+  </head>
+  <body>
+    <main class="hero">
+      <h1 class="title">Coming Soon</h1>
+      <p class="subtitle">We're working on something great. Stay tuned.</p>
+      <a class="cta" href="mailto:hello@carebridgeafrica.com">Notify me</a>
+      <footer class="foot">&copy; <span id="year"></span></footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
